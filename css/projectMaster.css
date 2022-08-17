@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html{
+    background-color:beige;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin:10px;
+    padding:0;
+    font-size:1em;
+    color:#000000;
+    
+}
+
+form {
+    margin:20px;
+}
+
+select {
+    width: fit-content;
+    padding:3px;
+    font-size:1em;
+}
+
+input[type="submit"] {
+    padding:3px;
+    font-size:1em;
+}
+
+
+label {
+    display:inline-block;
+    width:fit-content;
+}
+
+.loginlabel{
+    width: 85px;
+}
+
+.ladder tr:nth-child(even) {
+    background-color: #fff;
+  }
+
+table {
+    border-collapse: collapse;
+    margin:10px;
+}
+
+table, th, td {
+    border: black solid 1px;
+    padding:3px;
+}
+    .fixtures{
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .teams{
+        width: 240px;
+    }
+    .scorebox {
+        width: 10.8px;
+    }
+    .venue{
+        width: 200px;
+        background-color: beige;
+    }
+    .venuediv{
+        font-size: 0.8rem;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    .venue span{
+        color: orange;
+        font-weight: bold;
+    }
+#map {
+    height: 400px;
+    width: 100%; /*https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript */
+}
+
+nav {
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 1.2rem;
+    overflow: auto;   
+}
+
+    nav li{
+        display: inline-flex;
+       
+    } 
+    nav ul {
+        list-style: none;
+        display: inline;
+        padding-inline-start: 0px;
+    }
+
+    nav a{
+        color: white !important;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    nav li:hover{
+        background-color: #20AFB3;
+        border-radius: 10px;
+    }
+    
+    .navlogo{
+        height: 54.4px;
+        background-color: #fff;
+        border-radius: 10px;
+        display: inline-flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        vertical-align: middle;
+        float: left;
+        overflow: auto;
+    }
+
+    .alogo{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+.tab {  /*https://www.w3schools.com/howto/howto_js_tabs.asp*/
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+.error{
+    color: red;
+    display: none;
+}
+
