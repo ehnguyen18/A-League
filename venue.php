@@ -1,14 +1,6 @@
 <!--20000820-->
 <!--Pham Gia Huy Nguyen -->
 <!--Wednesday 9:00AM-->
-<?php
-  require_once("conn.php");
-  $venue = $dbConn->escape_string($_GET["venueID"]);
-  $sql = "SELECT * FROM venues WHERE venueID = '$venue'";
-  $results = $dbConn->query($sql)
-  or die ('Problem with query: ' . $dbConn->error);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,11 +11,11 @@
   <body>
   <nav>
     <ul> 
-        <a class="alogo" href="index.php"><img class="navlogo" src="images/ALeague.png"></a>
-        <li><a href="ladder.php">Ladder</a></li>
-        <li><a href="fixtures.php">Fixtures</a></li>
-        <li><a href="scoreEntry.php">Enter Results</a></li>
-        <li><a href="logoff.php">Logoff</a></li>
+        <a class="alogo" href="index.html"><img class="navlogo" src="images/ALeague.png"></a>
+        <li><a href="ladder.html">Ladder</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li><a href="scoreEntry.html">Enter Results</a></li>
+        <li><a href="logoff.html">Logoff</a></li>
     </ul>
 </nav>
     <h1>Venue Info</h1>

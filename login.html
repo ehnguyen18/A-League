@@ -1,0 +1,34 @@
+<!--20000820-->
+<!--Pham Gia Huy Nguyen -->
+<!--Wednesday 9:00AM-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A-League Assignment - Login</title>
+    <link rel="stylesheet" href=" css/projectMaster.css">
+    <style>
+      input[type="text"] {border: 1px solid black;}
+    </style>
+</head>
+<body>
+<nav>
+    <ul> 
+        <a class="alogo" href="index.html"><img class="navlogo" src="images/ALeague.png"></a>
+        <li><a href="ladder.html">Ladder</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li><a href="scoreEntry.html">Enter Results</a></li>
+    </ul>
+</nav>
+    <form id="exercise4Form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <h1>Administrator Login</h1>
+        <p style="color:red;"><?php echo $errorMessage;?></p>
+        <label for="username" class="loginlabel">Username: </label>
+        <input type="text" name="username" size="25" id="username" value="<?php if (isset($_POST["submit"])) print $username ?>"><br>
+        
+        <label for="password" class="loginlabel">Password: </label>       
+        <input type="password" name="password" size="25" id="password" value="<?php if (isset($_POST["submit"])) print $password ?>">
+      <p><input type="submit" name="submit"></p>
+    </form>
+</body>
+</html>
